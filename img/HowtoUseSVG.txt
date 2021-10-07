@@ -1,0 +1,32 @@
+
+
+1.icomoon.io sitesine git
+2. istedigin iconları sec
+3. sol üstte preferences kısmını hallet
+4. sonra sol altta download yap
+
+5. SVG klasörü, chevron-thin ile başlayan dosyayı img a
+ekle
+
+6. sprite.svg olustur oraya iconların path "symbol 
+definitions " kısmnı kodlarını yapıstır
+
+7.EN BAŞA ŞU KODU <svg aria-hidden="true" style="position: absolute; width: 0; 
+height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+
+
+EN SONA DA 
+</defs>
+</svg>
+ekle bitti
+
+
+HTML KISMI ORNEK KULLANIM
+
+<a href="#" class="item1__link">
+ <svg class="item1__icon"> 
+   <use xlink:href="img/sprite.svg#icon-user"></use>
+ </svg>
+ <span class="item1_span">Account</span>
+</a>

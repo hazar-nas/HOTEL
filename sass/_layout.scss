@@ -1,0 +1,92 @@
+.container {
+  max-width: 150rem;
+  background-color: var(--color-grey-light-2);
+  margin: 6rem auto;
+  box-shadow: var(--shadow-dark);
+  min-height: 50rem;
+
+  @media only screen and (max-width: $tab-land) {
+    margin: 0; // since the screen already occupies entire width
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.header {
+  font-size: 1.4rem;
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $phone-500m) {
+    flex-wrap: wrap;
+    height: 9rem;
+  }
+}
+
+.content {
+  display: flex;
+
+  @media only screen and (max-width: $tab-port) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  flex: 0 0 18%; // flex-grow flex-shrink flex-basis(width)
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+  flex: 1;
+}
+
+.detail {
+  font-size: 1.4rem; // the other child elements'll inherit it
+  display: flex;
+  padding: 4.5rem;
+  border-bottom: var(--line);
+  background-color: var(--color-grey-light-1);
+
+  @media only screen and (max-width: $tab-port) {
+    padding: 1.5rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  background-color: #fff;
+  flex: 0 0 60%;
+  padding: 3rem;
+  box-shadow: var(--shadow-light);
+  margin-right: 4.5rem;
+
+  @media only screen and (max-width: $tab-port) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $phone) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.user-reviews {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
