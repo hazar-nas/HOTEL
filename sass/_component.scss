@@ -1,5 +1,12 @@
 ////////// LOGO
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 98.72%;
+  z-index: 99;
+}
+
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
@@ -232,6 +239,10 @@
       }
     }
   }
+}
+
+.show {
+  display: block;
 }
 
 .user-nav__user:hover .user-nav--dropdown {
